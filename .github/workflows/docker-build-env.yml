@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Publish Gitlab Image
-        uses: elgohr/Publish-Docker-Github-Action@2.12
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: dbcsr/build-env-ubuntu-20.04
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -33,7 +33,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Publish Gitlab Image
-        uses: elgohr/Publish-Docker-Github-Action@2.12
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: dbcsr/build-env-latest-gcc
           username: ${{ secrets.DOCKERHUB_USERNAME }}
